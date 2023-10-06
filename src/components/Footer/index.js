@@ -2,13 +2,23 @@ import styled from "styled-components";
 import whatsapp from "../../imgs/icone_whatsapp.png";
 import email from "../../imgs/icone_email.png";
 
-const Contato = styled.div``
+const Contato = styled.div`
+    justify-content: center;
+`
 
 const ContatoHeader = styled.div``
 
-const BotaoWPP = styled.div``
+const BotaoWPP = styled.img`
+    width: 15px;
+    border-radius: 50%;
+    margin-bottom: 1em;
+`
 
-const BotaoEmail = styled.div``
+const BotaoEmail = styled.img`
+    width: 15px;
+    border-radius: 50%;
+    margin-bottom: 1em;
+`
 
 const Direitos = styled.div``
 
@@ -25,19 +35,13 @@ function Footer() {
                 <ContatoHeader>
                     <h6>Fale Conosco</h6>
                 </ContatoHeader>
-                <BotaoWPP>
-                    <img 
-                    href="" 
+                <BotaoWPP href="" 
                     src={whatsapp}
-                    alt='contato wpp'
-                    ></img>
+                    alt='contato wpp'>
                 </BotaoWPP>
-                <BotaoEmail>
-                    <img 
-                    href="" 
+                <BotaoEmail href="" 
                     src={email}
-                    alt='contato email'
-                    ></img>
+                    alt='contato email'>
                 </BotaoEmail>
             </Contato>
             <Links>
@@ -52,7 +56,8 @@ function Footer() {
                 O grupo galo busca estufar o peito e botar moral, já a vinheria galo é pra tomar um vinho da hora depois.
             </SobreNos>
             <Direitos>
-                <a>Vinheria Galo é uma marca oficial da Galo Enterprise. Todos os direitos reservados. 2022-2025</a>
+                <a>Vinheria Galo é uma marca oficial da Galo Enterprise.</a>
+                <a><p>Todos os direitos reservados. 2022-2025</p></a>
             </Direitos>
         </div>
     )
