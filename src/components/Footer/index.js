@@ -20,8 +20,11 @@ const ContainerFooter = styled.div`
     flex-direction: column;
 `
 const Contato = styled.div`
+    .he { 
     text-align: start;
     padding: 1em;
+    }
+    
 `
 const BotaoWPP = styled.img`
     width: 35px;
@@ -37,11 +40,19 @@ const BotaoEmail = styled.img`
     margin-right: 0.5em;
 `
 
-const Direitos = styled.div``
+const Direitos = styled.div`
+    font-size: 10px;
+    p {
+        align-text: center
+    }
+`
 
 const Links = styled.div``
 
-const SobreNos = styled.div``
+const SobreNos = styled.div`
+    text-align: center;
+    margin: 10em;
+`
 
 const exploreOpcoes = ['Home', 'Sobre', 'Contato', 'Blog', 'FAQ']
 
@@ -68,11 +79,12 @@ function Footer() {
                 </ul>
             </Links>
             <SobreNos>
-                O grupo galo busca estufar o peito e botar moral, já a vinheria galo é pra tomar um vinho da hora depois.
+                O grupo galo busca estufar trazer conforto e acessibilidade a sociedade. A Vinheria Galo faz isso através do consumo de um bom vinho.
             </SobreNos>
             <Direitos>
                 <a>Vinheria Galo é uma marca oficial da Galo Enterprise.</a>
-                <a><p>Todos os direitos reservados. 2022-2025</p></a>
+                <a><p>Todos os direitos reservados.</p></a>
+                <a><p> 2022-2025</p></a>
             </Direitos>
         </Base>
     )
